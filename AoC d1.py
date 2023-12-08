@@ -2,7 +2,7 @@
 import regex as re
 
 # %% V1
-f = open("input.txt", "r")
+f = open("inputs/input1.txt", "r")
 
 def v1(f):
     calibration_values = []
@@ -105,10 +105,10 @@ def v2(f):
     # return calibration_values
 
 
-f = open("input.txt", "r")
+f = open("inputs/input1.txt", "r")
 print(v2(f))
 # list1 = v2(f)
-# f = open("input.txt", "r")
+# f = open("inputs/input.txt", "r")
 # list2 = v2_wrong2(f)
 #compare results
 #[(index, pair) for index, pair in enumerate(zip(list1, list2)) if pair[0] != pair[1]]

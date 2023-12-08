@@ -1,5 +1,5 @@
 # %%
-f = open("input3.txt", "r")
+f = open("inputs/input3.txt", "r")
 
 lines = f.read().split('\n')
 numbers = []
@@ -81,7 +81,7 @@ if(number != '' and symbol_present(line_index, char_index-len(number), char_inde
     
 
 # %% Substitute number for H to find error
-    f = open("input3.txt", "r")
+    f = open("inputs/input3.txt", "r")
 
     lines = f.read().split('\n')
     numbers = []
@@ -187,7 +187,7 @@ def add_num_to_star_dict(star_position, star_nums):
     else:
         star_nums[star_position]= [int(number)]
 
-f = open("input3.txt", "r")
+f = open("inputs/input3.txt", "r")
 
 lines = f.read().split('\n')
 

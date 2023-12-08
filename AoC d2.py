@@ -1,5 +1,5 @@
 # %%
-f = open("input2.txt", "r")
+f = open("inputs/input2.txt", "r")
 
 def part1(f):
     cube_limits = {
@@ -37,7 +37,7 @@ def part1(f):
 
 # %%
 import math
-f = open("input2.txt", "r")
+f = open("inputs/input2.txt", "r")
 
 powers = []
 
