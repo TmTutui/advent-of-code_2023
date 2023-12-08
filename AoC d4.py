@@ -36,15 +36,15 @@ for card_index, line in enumerate(lines):
 
     next_copies = len(set(winning_numbers).intersection(set(elf_numbers)))
     
-    current_card_copies = card_copies[copy_index]+1 if card_index in card_copies.keys() else 1
+    number_current_cards = card_copies[card_index]+1 if card_index in card_copies.keys() else 1
 
     for i in range(1, next_copies+1):
         copy_index = i + card_index
 
         if (copy_index in card_copies.keys()):
-            card_copies[copy_index] += current_card_copies
+            card_copies[copy_index] += number_current_cards
         else:
-            card_copies[copy_index] = current_card_copies
+            card_copies[copy_index] = number_current_cards
 
 
 print(sum(card_copies.values()) + len(lines))
